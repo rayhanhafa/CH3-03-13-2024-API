@@ -29,7 +29,7 @@ const getCustomerById = (req, res, next) => {
 
     // menggunakan array method utk membantu menemukan spesifik data
     const customer = customers.find((cust) => cust._id === id);
-
+    console.log(customer)
     res.status(200).json({
         status: "success",
         data: {
